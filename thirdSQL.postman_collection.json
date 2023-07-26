@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "69ad2585-4f92-478a-90ef-e4e58db00ad1",
+		"name": "thirdSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27793521"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get all Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mariem\",\r\n    \"email\":\"mariem@gmail.com\",\r\n    \"password\":\"68564681\",\r\n    \"age\":26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\":\"mariem@gmail.com\",\r\n    \"password\":\"68564681\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"khaloda\",\r\n    \"email\":\"khaled@gmail.com\",\r\n    \"password\":\"222\",\r\n    \"age\":67\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/update/17",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"update",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/delete/16",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"delete",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Char&Age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/search/m/30",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"search",
+								"m",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/searchage/26/100",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"searchage",
+								"26",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Oldest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/oldestusers",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"oldestusers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/searchid/18",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"searchid",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "Get All Notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Going to pray\",\r\n    \"description\": \"everyone must pray because without it you are useless\",\r\n    \"userId\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/note/add",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"note",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Notes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/note/delete/14",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"note",
+								"delete",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Notes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Going to pray\",\r\n    \"description\": \"everyone must pray because without it you are useless\",\r\n    \"userId\": 21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/note/update/12",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"note",
+								"update",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users&Notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/note/getboth",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"note",
+								"getboth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
